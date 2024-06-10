@@ -53,15 +53,10 @@ form.onsubmit = function (e) {
   const newPet = new Pet(petName, ownerName, species, breed);
   pets.push(newPet);
   console.log(pets);
-  console.log(pets[0].ownerName);
 
-  console.log("Submit");
   form.reset();
   updatePetList();
 };
-
-console.log(pets);
-
 const list = document.getElementById("listPet");
 
 function updatePetList() {
